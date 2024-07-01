@@ -1,0 +1,121 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	transition: background-color 0.3s, color 0.3s;
+}
+.container {
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 800px;
+	transition: background-color 0.3s, color 0.3s;
+}
+h1, h2 {
+	margin-bottom: 1rem;
+}
+.budget-input {
+	margin-bottom: 1.5rem;
+}
+input {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin-right: 10px;
+}
+button:hover {
+	background-color: #45a049;
+}
+#allocations {
+	margin-bottom: 1.5rem;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1rem;
+}
+th, td {
+	text-align: left;
+	padding: 0.5rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+th {
+	font-weight: bold;
+}
+.summary {
+	border-radius: 4px;
+	padding: 1rem;
+	margin-top: 1rem;
+}
+.editable-cell input {
+	width: 100%;
+	box-sizing: border-box;
+}
+.delete-btn {
+	background-color: #f44336;
+	color: white;
+	border: none;
+	padding: 0.25rem 0.5rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.delete-btn:hover {
+	background-color: #d32f2f;
+}
+#darkModeToggle, #clearCookiesBtn {
+	position: fixed;
+	top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#darkModeToggle {
+	right: 180px;
+	background-color: #e0e0e0;
+	color: #333;
+}
+#clearCookiesBtn {
+	right: 20px;
+	background-color: #f44336;
+	color: white;
+}
+/* Dark mode */
+body.dark-mode {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+.dark-mode .container {
+	background-color: #1e1e1e;
+}
+
+.dark-mode #darkModeToggle {
+	background-color: #333;
+	color: white;
+}
+
+.dark-mode th {
+	background-color: #333;
+}
+.dark-mode input,
+.dark-mode .summary {
+	background-color: #333;
+	color: #e0e0e0;
+	border-color: #555;
+}
+.dark-mode .summary {
+	background-color: #1e1e1e;
+}
